@@ -70,8 +70,7 @@ namespace QuadEquationWPF
                 LabelX1.Visibility = Visibility.Visible;
                 TextBoxX1.Visibility = Visibility.Visible;
                 TextBoxX2.Visibility = Visibility.Collapsed;
-                LabelX2.Visibility = Visibility.Collapsed; ;
-                this.Height = 340;
+                LabelX2.Visibility = Visibility.Collapsed;               
             }
             if (d < 0)
             {                                              
