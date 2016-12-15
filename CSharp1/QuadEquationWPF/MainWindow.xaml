@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuadEquationWPF"
         mc:Ignorable="d"
-        Title="QuadEquation" Height="353.856" Width="353.766">
+        Title="QuadEquation" Height="355" Width="300">
     <Grid Margin="0,0,1,1">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -20,19 +20,19 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="NAME_WINDOW"  Grid.Row="0" Grid.ColumnSpan="2" Margin="30,10,30,5" FontFamily="Showcard Gothic" FontSize="20" TextAlignment="Center" LineHeight="7" FontStretch="Expanded" Background="Beige">QuadEquation</TextBlock>
-        <TextBox Grid.Column="1" Grid.Row="1"  BorderBrush="Aqua" Margin="10" TextChanged="TextBox_TextChanged"></TextBox>
-        <Label Grid.Column="0" Grid.Row="1" FontSize="15" Margin="30,10,10,10">a =</Label>
-        <TextBox Grid.Column="1" Grid.Row="2"  BorderBrush="Aqua" Margin="10"></TextBox>
-        <Label Grid.Column="0" Grid.Row="2" Margin="30,10,10,10" FontSize="15">b =</Label>
-        <TextBox Grid.Column="1" Grid.Row="3" BorderBrush="Aqua"  HorizontalAlignment="Left" Margin="10" VerticalAlignment="Center" Width="40"></TextBox>
-        <Label Grid.Column="0" Grid.Row="3" Margin="30,10,10,10" FontSize="15">c =</Label>
-        <Button Grid.Row="4" Grid.ColumnSpan="2" Margin="30,10" FontFamily="Showcard Gothic" FontSize="18" RenderTransformOrigin="0.5,0.5">Solve
+        <TextBlock x:Name="NAME_WINDOW"  Grid.Row="0" Grid.ColumnSpan="2" Margin="30,10,30,5" FontFamily="Showcard Gothic" FontSize="20" TextAlignment="Center" LineHeight="7" FontStretch="Expanded">QuadEquation</TextBlock>
+        <TextBox  Name="TextBoxA" Grid.Column="1" Grid.Row="1"  BorderBrush="Aqua" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Center" Width="40"></TextBox>
+        <Label  Name="LabelA" Grid.Column="0" Grid.Row="1" FontSize="15" Margin="30,10,10,10" HorizontalAlignment="Right">a =</Label>
+        <TextBox  Name="TextBoxB" Grid.Column="1" Grid.Row="2"  BorderBrush="Aqua"  HorizontalAlignment="Left" Margin="10" VerticalAlignment="Center" Width="40"></TextBox>
+        <Label  Name="LabelB" Grid.Column="0" Grid.Row="2" Margin="30,10,10,10" FontSize="15" HorizontalAlignment="Right">b =</Label>
+        <TextBox Name="TextBoxC" Grid.Column="1" Grid.Row="3" BorderBrush="Aqua"  HorizontalAlignment="Left" Margin="10" VerticalAlignment="Center" Width="40"></TextBox>
+        <Label Name="LabelC" Grid.Column="0" Grid.Row="3" Margin="30,10,10,10" FontSize="15" HorizontalAlignment="Right">c =</Label>
+        <Button Name="Button_solve" Click="Button_Click"  IsEnabled="True" IsDefault="true" Grid.Row="4" Grid.ColumnSpan="2" Margin="30,10" FontFamily="Showcard Gothic" FontSize="18" RenderTransformOrigin="0.5,0.5">Solve
         </Button>
-        <TextBox Grid.Column="1" Grid.Row="5"  BorderBrush="Aqua" Margin="10" Visibility="Hidden"></TextBox>
-        <Label Grid.Column="0" Grid.Row="5" Margin="30,10,10,10" FontSize="15" Visibility="Hidden">b =</Label>
-        <TextBox Grid.Column="1" Grid.Row="6"  BorderBrush="Aqua" Margin="10" Visibility="Hidden"></TextBox>
-        <Label Grid.Column="0" Grid.Row="6" Margin="30,10,10,10" FontSize="15" Visibility="Hidden">c =</Label>
+        <TextBox Name="TextBoxX1" Grid.Column="1" Grid.Row="5"  BorderBrush="Red" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Center" Width="40" Visibility="Hidden"></TextBox>
+        <Label Name="LabelX1"  Content="" Grid.Column="0" Grid.Row="5" Margin="30,10,10,10" FontSize="15" Visibility="Hidden"> </Label>
+        <TextBox  Name="TextBoxX2" Grid.Column="1" Grid.Row="6"  BorderBrush="Red" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Center" Width="40" Visibility="Hidden"></TextBox>
+        <Label  Name="LabelX2" Grid.Column="0" Grid.Row="6" Margin="30,10,10,10" FontSize="15" Visibility="Hidden"></Label>
 
     </Grid>
 </Window>
