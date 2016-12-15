@@ -1,0 +1,24 @@
+﻿<Window x:Class="SwitchProjectWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SwitchProjectWPF"
+        mc:Ignorable="d"
+             Title="SwitchProject" Name="Form" Height="172" Width="264">
+    <Grid Name="MainGrid">
+        <Button Name="WeekEncriptionButton" Content="Расшифровка дня недели" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="235" Height="25" Click="Button_Click" Background="#FFBCC7D4"/>
+        <Button Name="MounthEncriptionButton" Content="Расшифровка месяца" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Width="235" Height="25" Click="MounthEncriptionButton_Click" Background="#FFBCC7D4"/>
+        <Button Name="NumericOperationButton" Content="Выполнение операций над числами" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="235" Height="25" Click="NumericOperationButton_Click" Background="#FFBCC7D4"/>
+        <Button Name="exitButton" Content="Выход" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="235" Height="25" Background="#FFBCC7D4" Click="exitButton_Click"/>
+        <Button Name="doButton" Content="" HorizontalAlignment="Left" Margin="260,39,0,0" VerticalAlignment="Top" Width="150" Height="25" Click="doButton_Click" Background="#FFBCC7D4"/>
+        <Label Name="inputOneLabel" HorizontalContentAlignment="Right" Content="" HorizontalAlignment="Left" Margin="260,9,0,0" VerticalAlignment="Top" Height="25" Width="95"/>
+        <TextBox Name="inputOneTextBox" HorizontalAlignment="Left" Height="25" Margin="360,9,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="50"/>
+        <TextBox Name="operationTextBox" HorizontalAlignment="Left" Height="25" Margin="510,39,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="30"/>
+        <Label Name="inputTwoLabel" HorizontalContentAlignment="Right" Content="" HorizontalAlignment="Left" Margin="410,10,0,0" VerticalAlignment="Top" Height="25" Width="95"/>
+        <TextBox Name="inputTwoTextBox" HorizontalAlignment="Left" Height="25" Margin="510,9,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="50"/>
+        <Label Name="operationLabel" HorizontalContentAlignment="Right" Content="Действие :" HorizontalAlignment="Left" Margin="435,39,0,0" VerticalAlignment="Top" Height="25" Width="70"/>
+        <Label Name="answerLabel" HorizontalContentAlignment="Left" Content="" HorizontalAlignment="Left" Margin="260,71,0,0" VerticalAlignment="Top" Height="25" Width="150" FontWeight="Bold" FontFamily="Perpetua Titling MT" Background="#FFFDFDFD"/>
+    </Grid>
+
+</Window>
