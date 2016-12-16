@@ -1,0 +1,16 @@
+﻿<Window x:Class="SwitchProjectWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SwitchProjectWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="250">
+    <Grid>
+        <Button x:Name="button" Content="1. Расшифровка дня недели" HorizontalAlignment="Left" Height="50" Margin="10,5,0,0" VerticalAlignment="Top" Width="222" Click="button_Click"/>
+        <Button x:Name="button_Copy" Content="3. Выполнение операций над числами" HorizontalAlignment="Left" Height="50" Margin="10,142,0,0" VerticalAlignment="Top" Width="222" Click="button_Copy_Click"/>
+        <Button x:Name="button_Copy1" Content="4. Выход" HorizontalAlignment="Left" Height="50" Margin="10,210,0,0" VerticalAlignment="Top" Width="222" Click="button_Copy1_Click"/>
+        <Button x:Name="button_Copy2" Content="2. Расшифровка месяца" HorizontalAlignment="Left" Height="50" Margin="10,73,0,0" VerticalAlignment="Top" Width="222" Click="button_Copy2_Click"/>
+
+    </Grid>
+</Window>

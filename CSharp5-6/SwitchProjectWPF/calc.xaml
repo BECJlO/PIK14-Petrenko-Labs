@@ -1,0 +1,20 @@
+﻿<Window x:Class="SwitchProjectWPF.calc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SwitchProjectWPF"
+        mc:Ignorable="d"
+        Title="calc" Height="180" Width="150">
+    <Grid>
+        <Label x:Name="label" Content="A" HorizontalAlignment="Left" Height="24" Margin="5,10,0,0" VerticalAlignment="Top" Width="24"/>
+        <Label x:Name="label_Copy" Content="B" HorizontalAlignment="Left" Height="24" Margin="5,39,0,0" VerticalAlignment="Top" Width="29" RenderTransformOrigin="0.182,0.608"/>
+        <TextBox x:Name="A" HorizontalAlignment="Left" Height="24" Margin="34,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98"/>
+        <TextBox x:Name="B" HorizontalAlignment="Left" Height="24" Margin="34,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98"/>
+        <Button x:Name="button" Content="+" HorizontalAlignment="Left" Height="25" Margin="10,82,0,0" VerticalAlignment="Top" Width="56" Click="button_Click"/>
+        <Button x:Name="button_Copy" Content="/" HorizontalAlignment="Left" Height="25" Margin="81,82,0,0" VerticalAlignment="Top" Width="51" RenderTransformOrigin="2.027,1.141" Click="button_Copy_Click"/>
+        <Button x:Name="button_Copy1" Content="*" HorizontalAlignment="Left" Height="25" Margin="10,112,0,0" VerticalAlignment="Top" Width="56" Click="button_Copy1_Click"/>
+        <Button x:Name="button_Copy2" Content="-" HorizontalAlignment="Left" Height="25" Margin="81,112,0,0" VerticalAlignment="Top" Width="51" Click="button_Copy2_Click"/>
+
+    </Grid>
+</Window>
