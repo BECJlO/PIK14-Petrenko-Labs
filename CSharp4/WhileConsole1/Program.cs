@@ -11,12 +11,12 @@ namespace WhileConsole1
         static void Main(string[] args)
         {
             Console.Write("Input n: ");
-            int n = int.Parse(Console.ReadLine()), k = 1;
-
+            int n = int.Parse(Console.ReadLine());
+            int k = 1;
             while (Math.Pow(3, k) <= n) {
                 k++;
             }
-            Console.WriteLine("Min k= " + k);
+            Console.WriteLine("Minimal K = " + k);
         }
     }
 }

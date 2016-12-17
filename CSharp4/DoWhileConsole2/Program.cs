@@ -8,7 +8,7 @@ namespace DoWhileConsole2
 {
     class Program
     {
-        static void Main(string[] args)
+        public void Main(string[] args)
         {
             String[] menu = { "1. Расшифровка дня недели", "2. Расшифровка месяца", "3. Выполнение операций над числами", "4. Выход" };
             foreach (String i in menu)
@@ -65,9 +65,9 @@ namespace DoWhileConsole2
                         {
                             Console.Write("Input A: ");
                             float a = float.Parse(Console.ReadLine());
-                            Console.Write("\nInput B: ");
+                            Console.Write("Input B: ");
                             float b = float.Parse(Console.ReadLine());
-                            String[] calcOperations = { "1. Сложение", "2. Умножение", "3. Вычитание", "4. Деление" };
+                            String[] calcOperations = { "1. Сложение", "2. Умножение", "3. Вычитание", "4. Деление", };
                             foreach (String i in calcOperations)
                             {
                                 System.Console.WriteLine("{0}", i);
@@ -100,7 +100,14 @@ namespace DoWhileConsole2
                                         Console.WriteLine("Result= " + result);
                                         break;
                                     }
-                                default: Console.WriteLine("ERROR: Selected unexisted operation!"); break;
+                                default:
+                                    {
+                                        Console.ForegroundColor = ConsoleColor.Red;
+                                        Console.WriteLine("ERROR: Selected unexisted operation!");
+                                        Console.ResetColor();
+                                        break;
+
+                                    }                                   
                             }
                             break;
                         }

@@ -11,12 +11,12 @@ namespace ForConsole6
         static void Main(string[] args)
         {
             Console.Write("Input n: ");
-            int n = int.Parse(Console.ReadLine());
+            float n = float.Parse(Console.ReadLine());
             double sum = 0;
-            for (int i = 0; i < n; i++) {
+            for (float i = 0; i < n; i++) {
                 sum += Math.Pow(i + 1, n - i);
             }
-            Console.WriteLine("Sum= " + sum);
+            Console.WriteLine("F = " + sum);
         }
     }
 }
